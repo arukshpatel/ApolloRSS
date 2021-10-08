@@ -1,17 +1,22 @@
 from src.feed import Feed
+from src.url import validateURL
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
 
-    url = "https://www.thesweetestthingblog.com"
-    print(url)
-    feed1 = Feed(url)
+    url1A = "https://www.thesweetestthingblog.com"
+    url1B = "https://www.thesweetestthingblog.com/rss"
+
+    url2A = "https://careerkarma.com/blog/bootcamps/rss/"
+    url2B = "https://careerkarma.com/blog/bootcamps/"
+
+    specialCase = "https://careerkarma.com/"
+
+    validateURL(url1A)
+    validateURL(url1B)
+    # feed1 = Feed(url)
 
     print("End")
 
