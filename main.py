@@ -1,5 +1,5 @@
 from src.feed import Feed
-from src.url import validateURL
+from src.url import *
 
 
 

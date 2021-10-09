@@ -1,7 +1,8 @@
 import requests
+from .url import *
 
 
-class Feed:
+class Feed :
 
     def __init__(self, url):
         self.url = url + '/rss'
@@ -20,4 +21,5 @@ class Feed:
     def getResponseStatus(self):
         return self.response.status_code
 
-    def getResponseContent(self): pass
+    def getResponseContent(self):
+        return self.response.content
